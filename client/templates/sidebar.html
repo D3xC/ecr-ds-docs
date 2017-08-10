@@ -1,0 +1,19 @@
+<template name="sidebar">
+  <div class="card side-menu">
+      <div class="card-content white-text">
+      <div class="collection with-header">
+        <div class="collection-header">
+          <span class="card-title sidemenu-title">
+            <!--<i class="material-icons">{{icon}}</i>-->
+            {{sideMenuTitle}}
+          </span>
+          <span class="card-title badge doc-count"><strong>{{docItems.count}}</strong></span>
+        </div>
+        {{#each doc in docItems}}
+          <!--{{> sideMenuItem}}-->
+          <a href="#" id="{{doc._id}}" class="collection-item doc-item">{{doc.title}}</a>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</template>

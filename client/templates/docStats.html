@@ -1,0 +1,24 @@
+<template name="docStats">
+  <div class="card doc-stats">
+    <div class="card-content">
+      <div class="card-title sidemenu-title">Created on:</div>
+      <div>{{now}}</div>
+    </div>
+
+    <div class="card-content">
+      <div class="card-title sidemenu-title">Tags</div>
+
+      <div class="">
+        {{#each tag in activeDoc.tags}}
+          <div class="chip doc-tag">{{tag}}</div>
+        {{/each}}
+        </div>
+
+    </div>
+
+    <div class="doc-text card-action">
+      <a class="btn btn-doc-source btn-flat" href="{{activeDoc.source}}" target="_blank">Source Document</a>
+    </div>
+
+  </div>
+</template>

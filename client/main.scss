@@ -1,0 +1,119 @@
+/* CSS declarations go here */
+$epiq-blue-light:#009FDE;
+$epiq-blue-dark: #003087;
+$epiq-orange: #E87722;
+$grey-blue: #89909F;
+$wild-blue-yonder: #A3BAC3;
+$dark-slate-grey: #254E70;
+$ucla-blue: #5A6B8C;
+$maya-blue: #59CAF7;
+$toolbar: $epiq-blue-dark;
+
+$primary-border-color: $ucla-blue;
+// $primary-border-box-shadow: $ucla-blu-rbga;
+$primary-text-color: $ucla-blue;
+$primary-content-color: $epiq-blue-dark;
+$card-heading-text: $epiq-blue-dark;
+$doc-cnt: $epiq-blue-light;
+$doc-cnt-text: white;
+$top-menu: $epiq-blue-dark;
+$top-menu-text: white;
+$top-menu-text-hover: $maya-blue;
+$doc-tag: $epiq-orange;
+$doc-tag-text:white;
+
+$toolbar-text: #ffffff;
+$toolbar-item-text: #ffba08;
+$sidemenu-item-alt: #9882AC;
+$sidemenu-title: $ucla-blue;
+$sidemenu-item: $ucla-blue;
+$sidemenu-badge: $epiq-blue-light;
+$sidemenu-badge-text: white;
+$doc-text: $ucla-blue;
+$doc-source-btn: white;
+$doc-source-btn-text: $ucla-blue;
+$doc-source-btn-hover: $epiq-blue-light;
+$doc-source-btn-hover-text: white;
+
+html, body {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
+main, .menu-area, .doc-area {
+  height: 100vh;
+}
+
+.side-menu {
+  min-height: 30vh;
+}
+
+.doc {
+  min-height: 50vh;
+  max-height: 80vh;
+}
+
+.row {
+  margin-top: 30px;
+}
+
+.collection, .collection-item {
+  border: none !important;
+}
+
+.badge {
+  border-radius: 13px;
+  font-size: 1rem !important;
+  color: $sidemenu-badge-text !important;
+  background-color: $sidemenu-badge !important;
+}
+
+.sidemenu-title, .doc-title {
+  color: $sidemenu-title !important;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 'bold';
+}
+
+.doc-item {  
+  color: $sidemenu-item !important;
+  font-family: 'Roboto', sans-serif;
+  &:hover {
+    background-color: $sidemenu-badge !important;
+    color: $sidemenu-badge-text !important;
+  }
+}
+
+.doc-text {
+  color: $doc-text;
+}
+
+.menu-item {
+  color: $toolbar-text !important;
+}
+
+.btn-doc-source {
+  background-color: $doc-source-btn;
+  color: $doc-source-btn-text;
+  &:hover {
+    background-color: $doc-source-btn-hover;
+    color: $doc-source-btn-hover-text;
+  }
+}
+
+.doc-tag {
+  background-color: $epiq-orange !important;
+  color: white !important;
+}
+
+.epiq-blue-dark {
+  background-color: $epiq-blue-dark !important;
+}
+
+.logo-wrapper {
+  .brand-logo {
+    margin-top: 12px;
+    .logo {
+      height: 50px;
+    }
+  }
+}

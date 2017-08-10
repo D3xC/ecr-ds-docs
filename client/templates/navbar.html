@@ -1,0 +1,12 @@
+<template name="navbar">
+  <nav class="epiq-blue-dark">
+    <div class="nav-wrapper container">
+      <div class="logo-wrapper"><a href="#" class="brand-logo"><img class="logo"  src="/epiq-logo-white-simple.svg" /> </a></div>
+      <ul class="right">
+        {{#each item in navbarItems}}
+          <li><a id="{{item._id}}" class="menu-item" href="#">{{item.title}}</a></li>
+        {{/each}}
+      </ul>
+    </div>
+  </nav>
+</template>
